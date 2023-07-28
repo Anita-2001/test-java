@@ -1,0 +1,201 @@
+1.method overloading--A class having same method with differrent parameers.different parameters in the sense diffence in data types,number of parameters.
+class Mobile{
+ String brand;
+ int cost;
+ String color;
+ float capacity;
+ 
+static void capture()
+{
+ System.out.println("method with no arguments");
+}
+static void capture(String brand)
+{
+System.out.println("method with String parameter");
+}
+static void capture(String brand,int cost);
+{
+System.out.println("method with String,int parameter");
+}
+static void capture(String color,float capacity,int cost)
+{
+System.out.println("method with String,int,float parameter");
+}
+
+public static void main(String[] args)
+{
+Mobile mobile=new Mobile();
+System.out.println(mobile.brand);
+System.out.println(mobile.cost);
+System.out.println(mobile.color);
+System.out.println(mobile.capacity);
+Mobile mobile1=new Mobile("mi",7000);
+
+2.varibles are the containers.that store different kind of values.varibles points to memory location. THRE are 4 kinds of varibles in java. they are local var,instance var,paramere,static var.
+local varible are declared within method,instance varible are declred within class but outside method,they are accesd by creating object in the method.
+static varible are declared using a keyword called static they are accesd using classname.variblename. parameters that are declaed within parameter are called parameter varible.
+class A
+{
+  static int a=4; //static varible
+         int b=5;  //instance varible
+    public static void main(int c=8)
+{
+  int d=10;  //local varible
+  A ref=new A();  //object creation using new keyword
+  System.out.println(d);  print local var
+  System.out.println(A.a); print static varible using classname
+  System.out.println(ref.b); print instace var by using object refand varble.
+}
+
+4.constructor overloading is also like a method overloading same methodname with differnt parameters.
+class AeroPlane{
+ double cost=767;
+ String name="indian";
+ String color="white";
+ int noOfPeople=1000;
+ float size=78f;
+ 
+ static void Fly(double cost)
+{
+System.out.println("Aeroplane is using a method of Fly");
+  
+}
+ static void Fly(double cost,String name)
+ {
+ System.out.println("Fly using cost,String parameters");
+}
+ststic void Fly(String color,double cost,int noOfPeople)
+{
+System.out.println("string,double,int are paramets in constructor");
+}
+  
+ public static void main(String[] args)
+{
+ AeroPlane plane=new AeroPlane();
+  String ref=plane.cost;
+System.out.println(ref);
+}
+  
+5.instance methodoverloading
+ class Bag
+{
+  int cost;
+  String color;
+
+ static void instanceVarMethod(int cost,String color)
+{
+ System.out.println("cost is"+cost);
+System.out.println("color is"+color);
+ int cost=100;
+ String color="balck";
+}
+ 
+ public static void main(String[] args)
+{
+ Bag bag=new Bag();
+ bag.cost;
+ bag.clor;
+}
+
+6.static varible program
+class B
+{
+ ststic int c=7;
+publlic static void main(String[] args)
+{
+ System.out.println(B.c);
+}
+
+static method
+
+ class Oven{
+  String name;
+   int cost;
+  staic void Heat()
+ {
+  System.out.println("name"+name);
+  System.out.println("cost"+cost);
+
+}
+
+public static void main(String[] args)
+{
+  Oven.Heat();
+  Sysrtem.out.println("bajaj"):
+ System.out.println(5000);
+}
+   
+7.constructror chaining
+ class Home
+{
+  String fatherName;
+  int noOfpeoples;
+  int noOfRooms;
+  float size;
+ 
+ static void main()
+{
+System.out.println("invkoing Home with no arguments");
+}
+ static void main(String fatherName)
+{
+ System.out.println("invkoing Home string arguenmet");
+ this.fatherName=fatherName;
+}
+ static void main(String fatherName,int noOfpeoples)
+ this(fatherName);
+ System.out.println("invkoing Home string,int arguenment");
+ this.noOfpeoples=noOfpeoples;
+}
+ static void main(String fatherName,int noOfpeoples,float size)
+{
+ this(String fatherName,int noOfpeoples);
+ System.out.println("invkoing Home string,int ,float arguenment")
+  this.size=size;
+}
+
+public static void main(String[] args)
+{
+ Home home=new Home("channa",7);
+}
+
+
+3.heap and stack memory
+ 
+there are two types of memory in java heap and stack;
+
+ 
+ 
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
